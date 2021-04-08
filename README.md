@@ -1,15 +1,19 @@
-# simple_telephony
+# Simple Telephony
 
-A new Flutter plugin.
+## Intro
+Detects whether the device support phone calls
 
-## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## Usage
+Here is an example of making a `GET` to an endpoint that returns a list.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+All you need is a model with a `fromJson` contructor. This ensures you app only interacts with strongly typed models, not raw JSON lists and maps. [Json_serializable](https://pub.dev/packages/json_serializable) is a commonly used dart package that provides this functionality.
+```dart
+    bool isVoiceCapable = false;
 
+    try {
+      isVoiceCapable = await SimpleTelephony.isVoiceCapable ?? false;
+    } on PlatformException {
+      print('Failed to get isVoiceCapable.');
+    }
+```
