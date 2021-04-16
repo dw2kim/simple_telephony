@@ -1,5 +1,5 @@
 name: simple_telephony
-description: detects whether the device support phone calls
+description: Provides very simple telephony info for both iOS and Android. Detects whether the device support phone calls.
 version: 0.0.1
 homepage: https://github.com/dw2kim/simple_telephony
 repository: https://github.com/dw2kim/simple_telephony
