@@ -54,10 +54,6 @@ class SimpleTelephonyPlugin: FlutterPlugin,
     binding.addRequestPermissionsResultListener(this)
   }
 
-  override fun onDetachedFromActivity() {
-    onDetachedFromActivity()
-  }
-
   private fun teardownChannel() {
     channel?.setMethodCallHandler(null)
     channel = null
