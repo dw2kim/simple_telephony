@@ -1,4 +1,4 @@
-# Simple Telephony
+# Simple Telephony ![Flutter 2.10.0](https://img.shields.io/badge/Flutter-2.10.0-blue)
 
 ## Intro
 Detects whether the device support phone calls
